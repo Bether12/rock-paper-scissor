@@ -37,4 +37,9 @@ function playGame(){
     for(let i=0; i<5; i++){
         playRound(getHumanChoice(), getComputerChoice);
     }
+    if(humanScore>computerScore){
+        alert('You win!');
+    }else{
+        alert('You lose!');
+    }
 }
