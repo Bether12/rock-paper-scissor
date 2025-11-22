@@ -15,19 +15,19 @@ function getHumanChoice(){
 function playRound(humanChoice, computerChoice){
     console.log(humanChoice+' '+computerChoice)
     if(humanChoice==computerChoice){
-        return 'Draw!'
+        console.log('Draw!');
     }else if(humanChoice=='rock'&&computerChoice=='scissor'){
         humanScore++;
-        return `You win! ${humanChoice} beats ${computerChoice}`;
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     }else if(humanChoice=='paper'&&computerChoice=='rock'){
         humanScore++;
-        return `You win! ${humanChoice} beats ${computerChoice}`;
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     }else if(humanChoice=='scissor'&&computerChoice=='paper'){
         humanScore++;
-        return `You win! ${humanChoice} beats ${computerChoice}`;
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     }else{
         computerScore++;
-        return `You lose! ${humanChoice} beats ${computerChoice}`;
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     }
 }
 
