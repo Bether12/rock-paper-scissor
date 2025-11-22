@@ -22,7 +22,7 @@ function playRound(humanChoice, computerChoice){
     }else if(humanChoice=='paper'&&computerChoice=='rock'){
         humanScore++;
         console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-    }else if(humanChoice='scissor'&&computerChoice=='paper'){
+    }else if(humanChoice=='scissor'&&computerChoice=='paper'){
         humanScore++;
         console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     }else{
