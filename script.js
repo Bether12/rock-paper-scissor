@@ -43,6 +43,8 @@ function playGame(){
     }else{
         alert('You lose!');
     }
+
+    console.log(humanScore +" "+computerScore)
 }
 
 playGame();
