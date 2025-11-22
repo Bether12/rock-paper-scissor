@@ -1,2 +1,2 @@
 # rock-paper-scissor
-A java script console game
+A javascript console game
