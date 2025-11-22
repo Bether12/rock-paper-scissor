@@ -9,7 +9,7 @@ function getComputerChoice(){
 
 function getHumanChoice(){
     let choice = prompt("Rock, Paper or Scissor?")
-    return choice
+    return choice.toLowerCase()
 }
 
 function playRound(humanChoice, computerChoice){
@@ -22,12 +22,12 @@ function playRound(humanChoice, computerChoice){
     }else if(humanChoice=='paper'&&computerChoice=='rock'){
         humanScore++;
         console.log(`You win! ${humanChoice} beats ${computerChoice}`);
-    }else if(humanChoice=='scissor'&&computerChoice=='paper'){
+    }else if(humanChoice='scissor'&&computerChoice=='paper'){
         humanScore++;
         console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     }else{
         computerScore++;
-        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+        console.log(`You lose! ${humanChoice} beats ${computerChoice}`);
     }
 }
 
