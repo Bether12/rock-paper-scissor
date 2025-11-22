@@ -13,6 +13,7 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
+    console.log(humanChoice+' '+computerChoice)
     if(humanChoice==computerChoice){
         return 'Draw!'
     }else if(humanChoice=='rock'&&computerChoice=='scissor'){
@@ -35,7 +36,7 @@ let computerScore = 0;
 
 function playGame(){
     for(let i=0; i<5; i++){
-        playRound(getHumanChoice(), getComputerChoice);
+        playRound(getHumanChoice(), getComputerChoice());
     }
     if(humanScore>computerScore){
         alert('You win!');
@@ -43,3 +44,5 @@ function playGame(){
         alert('You lose!');
     }
 }
+
+playGame();
