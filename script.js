@@ -7,15 +7,7 @@ function getComputerChoice(){
     else return 'scissor'
 }
 
-/*function getHumanChoice(e){
-    if(e.target==document.getElementById('rock')){
-        return 'rock';
-    }else if(e.target==document.getElementById('paper')){
-        return 'paper';
-    }else{
-        return 'scissor';
-    }
-}*/
+const results = document.querySelector('.results');
 
 function playRound(humanChoice, computerChoice){
     console.log(humanChoice+' '+computerChoice)
