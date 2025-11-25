@@ -8,6 +8,8 @@ function getComputerChoice(){
 }
 
 const results = document.querySelector('.results');
+const human_score = document.querySelector('#human-score');
+const computer_score = document.querySelector('#computer-score');
 
 function playRound(humanChoice, computerChoice){
     console.log(humanChoice+' '+computerChoice)
