@@ -7,7 +7,7 @@ function getComputerChoice(){
     else return 'scissor'
 }
 
-function getHumanChoice(e){
+/*function getHumanChoice(e){
     if(e.target==document.getElementById('rock')){
         return 'rock';
     }else if(e.target==document.getElementById('paper')){
@@ -15,7 +15,7 @@ function getHumanChoice(e){
     }else{
         return 'scissor';
     }
-}
+}*/
 
 function playRound(humanChoice, computerChoice){
     console.log(humanChoice+' '+computerChoice)
@@ -39,3 +39,17 @@ function playRound(humanChoice, computerChoice){
 let humanScore = 0;
 let computerScore = 0;
 
+const buttons = document.querySelector('.buttons');
+buttons.addEventListener('click', ()=>{
+    switch(e.target.id){
+        case 'rock':
+            playRound(e.target.id, getComputerChoice);
+            break;
+        case 'paper':
+            playRound(e.target.id, getComputerChoice);
+            break;
+        case 'scissor':
+            playRound(e.target.id, getComputerChoice);
+            break;
+    }
+})
