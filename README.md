@@ -1,2 +1,2 @@
 # rock-paper-scissor
-A javascript console game
+A javascript game played in the browser, showcasing my DOM manipulation abilities
