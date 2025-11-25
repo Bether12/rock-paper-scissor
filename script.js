@@ -40,16 +40,16 @@ let humanScore = 0;
 let computerScore = 0;
 
 const buttons = document.querySelector('.buttons');
-buttons.addEventListener('click', ()=>{
+buttons.addEventListener('click', (e)=>{
     switch(e.target.id){
         case 'rock':
-            playRound(e.target.id, getComputerChoice);
+            playRound(e.target.id, getComputerChoice());
             break;
         case 'paper':
-            playRound(e.target.id, getComputerChoice);
+            playRound(e.target.id, getComputerChoice());
             break;
         case 'scissor':
-            playRound(e.target.id, getComputerChoice);
+            playRound(e.target.id, getComputerChoice());
             break;
     }
 })
